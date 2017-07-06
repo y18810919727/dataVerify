@@ -27,7 +27,7 @@ def import_orders(file):
         rec['time']=data[3]
         rec['side']=data[5]
         rec['kind']=data[6]
-        rec['id']=data[7]
+        rec['id']=long(data[7])
         rec['price']=long(data[8])
         rec['volume']=long(data[9])
         datalist.append(rec.copy())

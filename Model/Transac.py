@@ -1,5 +1,6 @@
 class Transac :
     def __init__(self,transacdict):
         self.__dict__.update(transacdict)
-        print self.price
+    def __str__(self):
+        return str(self.__dict__)
 
